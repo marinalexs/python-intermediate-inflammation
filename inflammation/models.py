@@ -14,21 +14,31 @@ def load_csv(filename):
     """Load a Numpy array from a CSV
 
     :param filename: Filename of CSV to load
+    :returns: 
     """
     return np.loadtxt(fname=filename, delimiter=',')
 
 
 def daily_mean(data):
-    """Calculate the daily mean of a 2D inflammation data array."""
+    """Calculate the daily mean of a 2D inflammation data array.
+    
+    :param data: a 2d data array
+    :returns: mean"""
     return np.mean(data, axis=0)
 
 
 def daily_max(data):
-    """Calculate the daily max of a 2D inflammation data array."""
+    """Calculate the daily max of a 2D inflammation data array.
+    
+    :param data: a 2d data array
+    :returns: max"""
     return np.max(data, axis=0)
 
 
 def daily_min(data):
-    """Calculate the daily min of a 2D inflammation data array."""
+    """Calculate the daily min of a 2D inflammation data array.
+    
+    :param data: a 2d data array
+    :returns: min"""
     return np.min(data, axis=0)
 
